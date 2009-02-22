@@ -1,0 +1,24 @@
+#Thu Nov 06 13:29:32 GMT 2008
+guice.xml.config.xml.TrueSingletonBinding=guice.xml.config.xml.descriptors.TrueSingletonBindingDescriptor
+guice.xml.config.xml.ProviderBinding=guice.xml.config.xml.descriptors.ProviderBindingDescriptor
+guice.xml.config.xml.BindingType=guice.xml.config.xml.descriptors.BindingTypeDescriptor
+guice.xml.config.xml.Property=guice.xml.config.xml.descriptors.PropertyDescriptor
+guice.xml.config.xml.StaticInjectionType=guice.xml.config.xml.descriptors.StaticInjectionTypeDescriptor
+guice.xml.config.xml.ProviderBindingType=guice.xml.config.xml.descriptors.ProviderBindingTypeDescriptor
+guice.xml.config.xml.EjbBinding=guice.xml.config.xml.descriptors.EjbBindingDescriptor
+guice.xml.config.xml.PropertiesBundleBinding=guice.xml.config.xml.descriptors.PropertiesBundleBindingDescriptor
+guice.xml.config.xml.GuiceConfiguration=guice.xml.config.xml.descriptors.GuiceConfigurationDescriptor
+guice.xml.config.xml.PropertiesBundleBindingType=guice.xml.config.xml.descriptors.PropertiesBundleBindingTypeDescriptor
+guice.xml.config.xml.PropertyType=guice.xml.config.xml.descriptors.PropertyTypeDescriptor
+guice.xml.config.xml.TrueSingletonBindingType=guice.xml.config.xml.descriptors.TrueSingletonBindingTypeDescriptor
+guice.xml.config.xml.ConstantBindingType=guice.xml.config.xml.descriptors.ConstantBindingTypeDescriptor
+guice.xml.config.xml.StaticInjection=guice.xml.config.xml.descriptors.StaticInjectionDescriptor
+guice.xml.config.xml.InterceptorBindingType=guice.xml.config.xml.descriptors.InterceptorBindingTypeDescriptor
+guice.xml.config.xml.ConstantBinding=guice.xml.config.xml.descriptors.ConstantBindingDescriptor
+guice.xml.config.xml.ModuleDependencies=guice.xml.config.xml.descriptors.ModuleDependenciesDescriptor
+guice.xml.config.xml.EjbBindingType=guice.xml.config.xml.descriptors.EjbBindingTypeDescriptor
+guice.xml.config.xml.Binding=guice.xml.config.xml.descriptors.BindingDescriptor
+guice.xml.config.xml.JndiBindingType=guice.xml.config.xml.descriptors.JndiBindingTypeDescriptor
+guice.xml.config.xml.IncludeModuleType=guice.xml.config.xml.descriptors.IncludeModuleTypeDescriptor
+guice.xml.config.xml.JndiBinding=guice.xml.config.xml.descriptors.JndiBindingDescriptor
+guice.xml.config.xml.InterceptorBinding=guice.xml.config.xml.descriptors.InterceptorBindingDescriptor
