@@ -1,4 +1,5 @@
 #summary Welcome to the ToDo Page - yeh... pretty obvious
+#labels Featured
 
 = To Do =
  * Think of more things to do!
