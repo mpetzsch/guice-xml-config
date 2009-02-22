@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="guiceConfiguration">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="moduleDependencies" type="IncludeModuleType" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="binding" type="BindingType" maxOccurs="unbounded" minOccurs="0"/>
+				<xs:element name="jndiBinding" type="JndiBindingType" maxOccurs="unbounded" minOccurs="0"/>
+				<xs:element name="ejbBinding" type="EjbBindingType" maxOccurs="unbounded" minOccurs="0"/>
+				<xs:element name="trueSingletonBinding" type="TrueSingletonBindingType" maxOccurs="unbounded" minOccurs="0"/>
+				<xs:element name="providerBinding" type="ProviderBindingType" maxOccurs="unbounded" minOccurs="0"/>
+				<xs:element name="interceptorBinding" type="InterceptorBindingType" maxOccurs="unbounded" minOccurs="0"/>
+				<xs:element name="constantBinding" type="ConstantBindingType" maxOccurs="unbounded" minOccurs="0"/>
+				<xs:element name="propertiesBundleBinding" type="PropertiesBundleBindingType" maxOccurs="unbounded" minOccurs="0"/>
+				<xs:element name="staticInjection" type="StaticInjectionType" maxOccurs="unbounded" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="configName" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="IncludeModuleType">
+		<xs:sequence>
+			<xs:element name="ModuleXml" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BindingType">
+		<xs:sequence>
+			<xs:element name="Interface" type="xs:string"/>
+			<xs:element name="Implementation" type="xs:string"/>
+			<xs:element name="AnnotatedWith" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="scope" type="ScopeType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="ProviderBindingType">
+		<xs:sequence>
+			<xs:element name="Interface" type="xs:string"/>
+			<xs:element name="Provider" type="xs:string"/>
+			<xs:element name="AnnotatedWith" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="scope" type="ScopeType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="JndiBindingType">
+		<xs:sequence>
+			<xs:element name="Interface" type="xs:string"/>
+			<xs:element name="JndiName" type="xs:string"/>
+			<xs:element name="AnnotatedWith" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="scope" type="ScopeType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="EjbBindingType">
+		<xs:sequence>
+			<xs:element name="Interface" type="xs:string"/>
+			<xs:element name="JndiName" type="xs:string"/>
+			<xs:element name="LocalHome" type="xs:string"/>
+			<xs:element name="AnnotatedWith" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrueSingletonBindingType">
+		<xs:sequence>
+			<xs:element name="Interface" type="xs:string"/>
+			<xs:element name="Implementation" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InterceptorBindingType">
+		<xs:sequence>
+			<xs:element name="Matcher" type="xs:string" minOccurs="0"/>
+			<xs:element name="AnnotatedWith" type="xs:string"/>
+			<xs:element name="Interceptor" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ConstantBindingType">
+		<xs:sequence>
+			<xs:element name="ConstantName" type="xs:string"/>
+			<xs:element name="ConstantValue" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PropertiesBundleBindingType">
+		<xs:sequence>
+			<xs:element name="property" type="PropertyType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="bundleName" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="StaticInjectionType">
+		<xs:sequence>
+			<xs:element name="StaticClass" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PropertyType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="name" type="xs:string" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="ScopeType">
+		<xs:restriction base="xs:string">
+		  <xs:enumeration value="session"/>
+		  <xs:enumeration value="singleton"/>
+		  <xs:enumeration value="request"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

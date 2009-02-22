@@ -5,14 +5,14 @@
   <name>Guice XML Configuration</name>
   <version>0.0.1-SNAPSHOT</version>
   <description>Guice configuration in XML form.</description>
+  <url>http://code.google.com/p/guice-xml-config/</url>
+  <packaging>jar</packaging>
   <issueManagement>
   	<system>google code</system>
   	<url>http://code.google.com/p/guice-xml-config/issues/list</url>
   </issueManagement>
-  <scm>
-  	<developerConnection>mpetzsch</developerConnection>
-  	<url>https://guice-xml-config.googlecode.com/svn/trunk/</url>
-  </scm>
+  <build>
+  </build>
   <dependencies>
   	<dependency>
   		<groupId>com.google.code.guice</groupId>
@@ -20,9 +20,10 @@
   		<version>1.0</version>
   		<type>pom</type>
   	</dependency>
+  	<dependency>
+  		<groupId>castor</groupId>
+  		<artifactId>castor</artifactId>
+  		<version>1.0</version>
+  	</dependency>
   </dependencies>
-  <dependencyManagement>
-  	<dependencies>
-  	</dependencies>
-  </dependencyManagement>
 </project>
