@@ -23,6 +23,6 @@ High level features:
 <binding>
     <Interface>guice.xml.config.test.dummys.BasicServiceIF</Interface>
     <Implementation>guice.xml.config.test.dummys.BasicServiceImpl</Implementation>    
-<AnnotatedWith>guice.xml.config.test.dummys.BasicServiceBlue</AnnotatedWith>			
+    <AnnotatedWith>guice.xml.config.test.dummys.BasicServiceBlue</AnnotatedWith>			
   </binding>
 }}}
