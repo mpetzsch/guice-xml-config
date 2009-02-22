@@ -54,14 +54,14 @@ import com.google.inject.TypeLiteral;
 import com.google.inject.jndi.JndiIntegration;
 import com.google.inject.name.Names;
 
-public abstract class BaseExternalModule extends AbstractModule
+public abstract class ExternalConfigModule extends AbstractModule
 {
 
-	private LoggerIF logger = new LogWrapper(BaseExternalModule.class);
+	private LoggerIF logger = new LogWrapper(ExternalConfigModule.class);
 
 	private String configFile;
 
-	public BaseExternalModule(String configFileName)
+	public ExternalConfigModule(String configFileName)
 	{
 		this.configFile = configFileName;
 	}
