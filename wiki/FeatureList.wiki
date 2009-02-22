@@ -1,13 +1,9 @@
 #summary List of current library features
 #labels Featured,Phase-Design
 
-= Introduction =
-
-This page lists at a high level the current features of this library with an example of each.
-
-*IT IS WORK IN PROGRESS AND NOT COMPLETE*
-
 = Features =
+
+This page lists at a high level the current features of this library with an example of each. *IT IS WORK IN PROGRESS AND NOT COMPLETE*
 
 High level features:
   * Interface to Implementation binding
