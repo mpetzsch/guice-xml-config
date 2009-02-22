@@ -26,3 +26,10 @@ High level features:
     <AnnotatedWith>guice.xml.config.test.dummys.BasicServiceBlue</AnnotatedWith>			
 </binding>
 }}}
+  * Constant Bindings (currently not typed)
+{{{
+<constantBinding>
+		<ConstantName>pool.maxSize</ConstantName>
+		<ConstantValue>50</ConstantValue>
+	</constantBinding>
+}}}
