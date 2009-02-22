@@ -29,7 +29,7 @@ High level features:
   * Constant Bindings (currently not typed)
 {{{
 <constantBinding>
-<ConstantName>pool.maxSize</ConstantName>
-<ConstantValue>50</ConstantValue>
+    <ConstantName>pool.maxSize</ConstantName>
+    <ConstantValue>50</ConstantValue>
 </constantBinding>
 }}}
