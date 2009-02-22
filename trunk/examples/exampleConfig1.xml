@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guiceConfiguration configName="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../src/main/resources/guice-config.xsd">
+  <moduleDependencies>
+    <ModuleXml>exampleConfig2.xml</ModuleXml>
+  </moduleDependencies>
+  <binding scope="session">
+    <Interface>Interface</Interface>
+    <Implementation>Implementation</Implementation>
+    <AnnotatedWith>AnnotatedWith</AnnotatedWith>
+  </binding>
+  <jndiBinding scope="session">
+    <Interface>Interface</Interface>
+    <JndiName>JndiName</JndiName>
+    <AnnotatedWith>AnnotatedWith</AnnotatedWith>
+  </jndiBinding>
+  <ejbBinding>
+    <Interface>Interface</Interface>
+    <JndiName>JndiName</JndiName>
+    <LocalHome>LocalHome</LocalHome>
+    <AnnotatedWith>AnnotatedWith</AnnotatedWith>
+  </ejbBinding>
+  <trueSingletonBinding>
+    <Interface>Interface</Interface>
+    <Implementation>Implementation</Implementation>
+  </trueSingletonBinding>
+  <providerBinding scope="session">
+    <Interface>Interface</Interface>
+    <Provider>Provider</Provider>
+    <AnnotatedWith>AnnotatedWith</AnnotatedWith>
+  </providerBinding>
+  <interceptorBinding>
+    <Matcher>Matcher</Matcher>
+    <AnnotatedWith>AnnotatedWith</AnnotatedWith>
+    <Interceptor>Interceptor</Interceptor>
+  </interceptorBinding>
+  <constantBinding>
+    <ConstantName>ConstantName</ConstantName>
+    <ConstantValue>ConstantValue</ConstantValue>
+  </constantBinding>
+  <propertiesBundleBinding bundleName="">
+    <property name="">property</property>
+  </propertiesBundleBinding>
+  <staticInjection>
+    <StaticClass>StaticClass</StaticClass>
+  </staticInjection>
+</guiceConfiguration>
