@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>guice.xml.config</groupId>
+  <artifactId>guice-xml-config</artifactId>
+  <name>Guice XML Configuration</name>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>Guice configuration in XML form.</description>
+  <issueManagement>
+  	<system>google code</system>
+  	<url>http://code.google.com/p/guice-xml-config/issues/list</url>
+  </issueManagement>
+  <scm>
+  	<developerConnection>mpetzsch</developerConnection>
+  	<url>https://guice-xml-config.googlecode.com/svn/trunk/</url>
+  </scm>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.google.code.guice</groupId>
+  		<artifactId>guice</artifactId>
+  		<version>1.0</version>
+  		<type>pom</type>
+  	</dependency>
+  </dependencies>
+  <dependencyManagement>
+  	<dependencies>
+  	</dependencies>
+  </dependencyManagement>
+</project>
