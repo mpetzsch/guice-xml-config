@@ -1,0 +1,33 @@
+#summary List of current library features
+
+= Introduction =
+
+This page lists at a high level the current features of this library with an example of each.
+
+*IT IS WORK IN PROGRESS AND NOT COMPLETE*
+
+= Features =
+
+High level features:
+  * Interface to Implementation binding
+{{{
+<binding>
+    <Interface>guice.xml.config.test.dummys.BasicServiceIF</Interface>
+    <Implementation>guice.xml.config.test.dummys.BasicServiceImpl</Implementation>
+  </binding>
+}}}
+  * Interface to Implementation binding with Annotations
+{{{
+<binding>
+    <Interface>guice.xml.config.test.dummys.BasicServiceIF</Interface>
+    <Implementation>guice.xml.config.test.dummys.BasicServiceImpl</Implementation>    
+    <AnnotatedWith>guice.xml.config.test.dummys.BasicServiceBlue</AnnotatedWith>			
+</binding>
+}}}
+  * Constant Bindings (currently not typed)
+{{{
+<constantBinding>
+    <ConstantName>pool.maxSize</ConstantName>
+    <ConstantValue>50</ConstantValue>
+</constantBinding>
+}}}
