@@ -21,10 +21,23 @@ High level features:
     <AnnotatedWith>guice.xml.config.test.dummys.BasicServiceBlue</AnnotatedWith>			
 </binding>
 }}}
+  * Interface to Implementation binding in Scopes
+{{{
+<binding scope="singleton">
+    <Interface>guice.xml.config.test.dummys.BasicServiceIF</Interface>
+    <Implementation>guice.xml.config.test.dummys.BasicServiceImpl</Implementation>    
+    <AnnotatedWith>guice.xml.config.test.dummys.BasicServiceBlue</AnnotatedWith>			
+</binding>
+}}}
   * Constant Bindings (currently not typed)
 {{{
 <constantBinding>
     <ConstantName>pool.maxSize</ConstantName>
     <ConstantValue>50</ConstantValue>
 </constantBinding>
+}}}
+  * True Singleton bindings (cross injector - using static... :-/ )
+{{{
+<trueSingletonBinding>		<Interface>guice.xml.config.test.dummys.ConnectionPoolIF</Interface>		<Implementation>guice.xml.config.test.dummys.ConnectionPoolImpl</Implementation>
+</trueSingletonBinding>
 }}}
