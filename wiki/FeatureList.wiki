@@ -38,6 +38,9 @@ High level features:
 }}}
   * True Singleton bindings (cross injector - using static... :-/ )
 {{{
-<trueSingletonBinding>		<Interface>guice.xml.config.test.dummys.ConnectionPoolIF</Interface>		<Implementation>guice.xml.config.test.dummys.ConnectionPoolImpl</Implementation>
+<trueSingletonBinding>
+    <Interface>guice.xml.config.test.dummys.ConnectionPoolIF</Interface>
+
+    <Implementation>guice.xml.config.test.dummys.ConnectionPoolImpl</Implementation>
 </trueSingletonBinding>
 }}}
