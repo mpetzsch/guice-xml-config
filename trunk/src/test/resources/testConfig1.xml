@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guiceConfiguration configName="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../src/main/resources/guice-config.xsd">
+  <binding>
+    <Interface>guice.xml.config.test.dummys.BasicServiceIF</Interface>
+    <Implementation>guice.xml.config.test.dummys.BasicServiceImpl</Implementation>
+  </binding>
+  <constantBinding>
+    <ConstantName>bobbins</ConstantName>
+    <ConstantValue>blah blah blah</ConstantValue>
+  </constantBinding>
+  <propertiesBundleBinding bundleName="test1">
+    <property name="fred">fred fred fred</property>
+  </propertiesBundleBinding>
+</guiceConfiguration>

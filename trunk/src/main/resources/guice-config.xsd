@@ -93,9 +93,7 @@
 	</xs:complexType>
 	<xs:simpleType name="ScopeType">
 		<xs:restriction base="xs:string">
-		  <xs:enumeration value="session"/>
 		  <xs:enumeration value="singleton"/>
-		  <xs:enumeration value="request"/>
 		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>
