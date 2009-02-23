@@ -10,11 +10,6 @@ package guice.xml.config;
  * The module will then read and process the external configuration before also 
  * processing any configuration which has been hard coded into the extendConfigure method
  * on the child module.
- * <p>
- * <b>Copyright:</b> (c) 2007 Capgemini UK Plc, United Kingdom<br>
- * <b>Website:</b> <a href="http://www.capgemini.co.uk">http://www.capgemini.co.uk</a><br>
- * <b>email:</b> <a href="mailto:info@capgemini.co.uk">info@capgemini.co.uk</a>
- * <p>
  * <b>Created:</b> 3 Oct 2007 18:33:38<br>
  * <b>@author:</b> MPETZSCH<br>
  * <b>@since:</b> JDK 1.5<br>
