@@ -7,11 +7,6 @@ package guice.xml.config;
  * The single static method should be passed the configuration filename to use.  It will then process the file
  * and return an instance of GuiceConfiguration
  * Providers don't work yet - this may be added in a later release.
- * <p>
- * <b>Copyright:</b> (c) 2007 Capgemini UK Plc, United Kingdom<br>
- * <b>Website:</b> <a href="http://www.capgemini.co.uk">http://www.capgemini.co.uk</a><br>
- * <b>email:</b> <a href="mailto:info@capgemini.co.uk">info@capgemini.co.uk</a>
- * <p>
  * <b>Created:</b> 3 Oct 2007 18:33:38<br>
  * <b>@author:</b> MPETZSCH<br>
  * <b>@since:</b> JDK 1.5<br>
